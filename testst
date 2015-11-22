@@ -1,5 +1,1 @@
-#!/bin/sh
-ssh vagrant@192.168.56.2
-if [ "$?" -eq "255" ]; then
-  echo "joblocalは利用できません"
-fi
+
