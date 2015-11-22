@@ -1,1 +1,10 @@
-echo step001
+#!/bin/sh
+sudo yum groupinstall 'Development Tools' -y
+sudo yum install openssl-devel readline-devel zlib-devel curl-devel libyaml-devel libffi-devel ImageMagick ImageMagick-devel ipa-pgothic-fonts openssl-devel readline-devel zlib-devel sqlite-devel git -y
+git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' | tee ~/.bash_profile
+echo 'eval "$(rbenv init -)"' | tee -a ~/.bash_profile
+source ~/.bash_profile
+rbenv install -v 2.2.3
+rbenv local 2.2.3
