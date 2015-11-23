@@ -1,0 +1,3 @@
+#!/bin/sh
+echo a001 start
+echo -- now making --
