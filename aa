@@ -1,0 +1,9 @@
+#!/bin/sh
+echo "Vagrant.configure(2) do |config|" > Vagrantfile
+echo "config.vm.box = 'bento/centos-7.1'" >> Vagrantfile
+echo "config.vm.network 'private_network', ip: '192.168.56.2'" >> Vagrantfile
+echo "if Vagrant.has_plugin?("vagrant-proxyconf")" >> Vagrantfile
+echo "config.proxy.http = "http://tkyproxy.intra.tis.co.jp:8080"" >> Vagrantfile
+echo "config.proxy.https = "http://tkyproxy.intra.tis.co.jp:8080"" >> Vagrantfile
+echo "end" >> Vagrantfile
+echo "end" >> Vagrantfile
