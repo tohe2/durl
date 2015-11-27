@@ -1,6 +1,0 @@
-#!/bin/sh
-echo "#!/bin/sh " > start.sh
-echo "#curl a001 | bash #step1" >> start.sh
-echo "#curl a002 | bash #step2" >> start.sh
-echo "echo -- start.sh is done --"
-sh start.sh
