@@ -1,0 +1,4 @@
+#!/bin/sh
+sudo yum intall -y httpd
+sudo service httpd start
+sudo chkconfig httpd on
