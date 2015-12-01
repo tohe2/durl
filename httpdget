@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo yum intall -y httpd
+sudo yum install -y httpd
 sudo service httpd start
 sudo chkconfig httpd on
 echo status_ok | sudo tee /var/www/html/index.html
