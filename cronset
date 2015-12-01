@@ -1,0 +1,4 @@
+cronset
+#!/bin/sh
+echo "0 * * * * root sh /vagrant/crondo.sh" | tee -a /etc/crontab
+
