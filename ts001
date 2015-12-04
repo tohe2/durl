@@ -1,0 +1,24 @@
+str = %x( curl -s -I http://#{ ARGV[0] }/ | grep HTTP | awk '{print $2}' )
+
+if str == "200\n" then
+  print("http: ok\n")
+else
+  print("http: ng\n")
+end
+
+str = %x( ssh #{ ARGV[0] } 'ls /vagrant|grep ssh1.sh' )
+
+if str == "ssh1.sh\n" then
+  print("ssh : ok\n")
+else
+  print("ssh : ng\n")
+end
+
+str = %x(ssh #{ ARGV[0] } 'sh /vagrant/ssh1.sh' )
+
+if str == "status_ok\n" then
+  print("ssh1: ok\n")
+else
+  print("ssh1: ng\n")
+end
+
