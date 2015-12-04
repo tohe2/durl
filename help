@@ -4,3 +4,8 @@
 # httpdget
 # cronset
 # crondo
+#
+# sh durl.sh 192.168.56.3 ts001
+#
+
+
