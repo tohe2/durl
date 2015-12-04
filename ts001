@@ -1,4 +1,4 @@
-str = %x( curl -s -I http://#{ ARGV[0] }/ | grep HTTP | awk '{print $2}' )
+str = %x( curl -s -I http://#{ ARGV[0] }/ --noproxy #{ ARGV[0] } | grep HTTP | awk '{print $2}' )
 
 if str == "200\n" then
   print("http: ok\n")
