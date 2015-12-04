@@ -1,0 +1,11 @@
+row=sho32228
+name = sho322
+age  = 28
+
+row=DJaoi30
+name = DJaoi
+age  = 30
+
+row=kazu_fujisawa38
+name = kazu_fujisawa
+age  = 38
