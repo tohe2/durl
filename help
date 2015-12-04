@@ -6,6 +6,7 @@
 # crondo
 #
 # sh durl.sh 192.168.56.3 ts001
-#
+# ruby ts001.rb 192.168.56.3
+# 
 
 
