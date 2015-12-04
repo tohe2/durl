@@ -1,0 +1,6 @@
+str = %x( curl -s http://#{ ARGV[0] }/ --noproxy #{ ARGV[0] } | diff ts002.txt - )
+if str == "" then
+  print ("ok\n")
+else
+  print ("ng\n")
+end
