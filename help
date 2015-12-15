@@ -1,11 +1,11 @@
 #
 # help: show this page
 #
+# -- uptouse --
 # gitget
 # httpdget
-# cronset
-# crondo
-#
+# -- making --
+# redmineget
 # ruby ts001.rb 192.168.56.3
 # ruby ts002.rb 192.168.56.3
 # ts002.txt
